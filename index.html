@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal app</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <h1>Hello VUE !</h1>
+    <h2>I am programer </h2>
+    <div id="app">
+        <!-- Para llamar los elementos de .js  -->
+        <p>{{ title }} --- {{author}} --- {{age}}</p>
+        <!-- Para cambiar valores una vez se presione el botón  -->
+        <button v-on:click="age++">Increase age</button>
+        <button v-on:click="age--">Decrease age</button>
+        <!-- forma de hacer cambios directos <div @click="title= 'La sombra del viento'">Change book tittle</div> -->
+        <div @click="changeTitle('La nausea')">Change book tittle</div>
+        <div v-if="showbox">
+            <p>This is a box </p>
+        </div>
+        <button @click="toggleshowbox">
+            <span v-if="showbox">Hide box</span>
+            <span v-if="!showbox">Show box</span>  
+            <!-- tambien se puede hacer con else  -->            
+        </button>
+        <div v-show="showbox">Otra forma de mostrar y ocultar sin eliminar por completo ( CSS )</div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
