@@ -11,3 +11,16 @@ Add Vitest:
 3) add dom in terminal => npm i -D vitest jsdom
 4) npm install -D vitest
 5) npm run test
+
+Git add:
+user.name
+user.email
+
+git clone
+git checkout branch 
+git status 
+git add namefile.js
+git status
+git commit -m "commit"
+git push origin branch
+git checkout -B main
