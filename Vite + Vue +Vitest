@@ -1,0 +1,13 @@
+Create new VUE project in vite terminal 
+1) npm init vue@latest name_of_project-- --template vue 
+2) cd name_of_project
+3) npm install
+4) npm run dev
+
+
+Add Vitest:
+1) npm install --save-dev @vue/test-utils
+2) packge.json scrip => add "test":"vite --dom"
+3) add dom in terminal => npm i -D vitest jsdom
+4) npm install -D vitest
+5) npm run test
