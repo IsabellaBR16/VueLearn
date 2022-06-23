@@ -5,6 +5,49 @@ Create new VUE project in vite terminal
 3) npm install
 4) npm run dev
 
+Add tools to proyect 
+
+
+//vite.config.js
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vuetify from 'vite-plugin-vuetify'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    vuetify({ autoImport: true })
+  ]
+})
+
+//main.js
+import 'vuetify/styles'
+import { createApp } from 'vue'
+import { createVuetify } from 'vuetify'
+import App from './App.vue'
+
+const app = createApp(App)
+const vuetify = createVuetify()
+
+app.use(vuetify)
+app.mount('#app')
+
+// package.json
+{
+  "scripts": {
+    "vite": "vite dev"
+  }
+}
+
+
+// COMMANDS: to run it
+npm i -D vite@latest
+npm i -S vue@3
+npm i -D @vitejs/plugin-vue
+npm i -S vuetify@3.0.0-beta.3
+npm i -D vite-plugin-vuetify
+npm run vite
+
 
 Add Vitest:
 1) npm install --save-dev @vue/test-utils
