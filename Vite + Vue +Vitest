@@ -1,5 +1,6 @@
 Create new VUE project in vite terminal 
-1) npm init vue@latest name_of_project-- --template vue 
+1) npm create vue@latest name_of_project-- --template vue // sin vitest
+1.1) npm init vue@latest name_of_project-- --template vue // con vitest
 2) cd name_of_project
 3) npm install
 4) npm run dev
