@@ -6,8 +6,6 @@ Create new VUE project in vite terminal
 4) npm run dev
 
 Add tools to proyect 
-
-
 //vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -68,3 +66,10 @@ git status
 git commit -m "commit"
 git push origin branch
 git checkout -B main
+
+Add python env :
+python3 -m venv ven 
+uvicorn main:app --reload 
+source lo_que_sea/ven/bin/activate
+
+
